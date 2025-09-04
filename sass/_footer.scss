@@ -1,0 +1,35 @@
+@use "variables.scss" as *;
+
+footer {
+  background-color: $color-principal;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  bottom:0;
+  width:100%;
+
+  .foot-text {
+    font-size: 14px;
+    padding-left:30px;
+  }
+
+  .redes {
+    display: flex;
+    gap: 15px;
+    align-items:center;
+    padding-right:30px;
+    margin:15px;
+
+    a {
+      img {
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}

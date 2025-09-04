@@ -1,0 +1,57 @@
+@use "variables.scss" as *;
+@use "mixing.scss" as *;
+
+.contactos {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 10% 20px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15%;
+
+  h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: $color-principal;
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  form{
+    align-items: center;
+  }
+
+  form {
+    .campo,textarea {
+      width: 100%;
+      padding: 15px 10px;
+      font-size: 15px;
+      border: 1px solid black;
+      margin-bottom: 20px;
+      border-radius: 3px;
+      display:flex;
+    }
+
+    textarea {
+      height:200px;
+      resize:none;
+    }
+
+    .btn-enviar {
+      @include boton($color-principal, black);
+      transition: background 0.3s;
+
+      &:hover {
+        background: $color-secundario;
+      }
+    }
+  }
+}
