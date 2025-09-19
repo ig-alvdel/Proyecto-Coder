@@ -34,12 +34,12 @@
     justify-content: center;
 
     &:hover {
-      background-color: #ffd9e9;
+      background-color: #b4b4b48a;
       transform: scale(1.05);
     }
 
     &:hover img {
-    animation: spin 3s linear infinite;
+      animation: spin 3s linear infinite;
     }
 
     img {

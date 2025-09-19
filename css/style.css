@@ -1,9 +1,11 @@
 body {
+  background-image: url(../medios/fondo4.jpg);
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  text-align: center;
 }
 
 main {
@@ -67,6 +69,25 @@ h2 {
   border-bottom: 1px solid #ccc;
 }
 
+.caja {
+  background-color: #FF81A5;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 100%;
+  color: white;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.caja .bio h2 {
+  margin-bottom: 10px;
+}
+.caja .bio p {
+  line-height: 1.6;
+}
+
 .portada h1 {
   padding-left: 80px;
 }
@@ -97,7 +118,7 @@ h2 {
   justify-content: center;
 }
 .discografia .album:hover {
-  background-color: #ffd9e9;
+  background-color: rgba(180, 180, 180, 0.5411764706);
   transform: scale(1.05);
 }
 .discografia .album:hover img {
